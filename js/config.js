@@ -1,1 +1,1 @@
-const API_URL = "https://las-classifieds-talented-node.trycloudflare.com";
+const API_URL = "https://limit-colleges-vital-committees.trycloudflare.com";
