@@ -1,8 +1,19 @@
-const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
+async function loadVideo() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
 
-const source = document.createElement("source");
-const video = document.getElementById("videoPlayer");
-source.type = "video/x-matroska";
+    const video = document.getElementById("videoPlayer");
 
-video.src = `${API_URL}/api/movies/play/${id}`;
+    const res = await fetch(`${API_URL}/api/movies/${id}/type`);
+    const data = await res.json();
+
+    const source = document.createElement("source");
+
+    source.type = "video/" + data.type;
+    source.src = `${API_URL}/api/movies/play/${id}`;
+
+    video.appendChild(source);
+    video.load();
+}
+
+loadVideo();
