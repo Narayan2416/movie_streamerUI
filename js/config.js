@@ -1,1 +1,1 @@
-const API_URL = "https://limit-colleges-vital-committees.trycloudflare.com";
+const API_URL = "https://prep-listed-reprints-watershed.trycloudflare.com";
