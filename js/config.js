@@ -1,1 +1,1 @@
-const API_URL = "https://prep-listed-reprints-watershed.trycloudflare.com";
+const API_URL = "http://localhost:5000";
