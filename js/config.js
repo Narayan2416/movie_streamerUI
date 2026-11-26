@@ -1,1 +1,1 @@
-const API_URL = "https://drama-pharmaceuticals-queens-dicke.trycloudflare.com/";
+const API_URL = "https://legends-resumes-private-algorithm.trycloudflare.com/";
